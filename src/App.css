@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-Lexend: "Lexend", sans-serif;
+    --page-width: min(1024px, 90vw);
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply font-Lexend bg-zinc-900 text-white;
+}
