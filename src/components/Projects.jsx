@@ -24,8 +24,7 @@ export default function Projects() {
     return (
         <section id="projects" ref={targetRef} className="mb-40">
             <h2
-                className={`mb-6 text-xl transition-all duration-700 md:text-4xl ${!isVisible ? "translate-y-12 opacity-0" : ""}`}
-            >
+                className={`mb-6 text-xl transition-all duration-700 md:text-4xl ${!isVisible ? "translate-y-12 opacity-0" : ""}`}>
                 Projects
             </h2>
             <ul className="flex flex-col gap-4">
@@ -33,8 +32,7 @@ export default function Projects() {
                     <li
                         key={project.title}
                         className={`transition-all duration-700 ${!isVisible ? "translate-y-12 opacity-0" : ""}`}
-                        style={{ transitionDelay: `${(index + 1) * 100}ms` }}
-                    >
+                        style={{ transitionDelay: `${(index + 1) * 100}ms` }}>
                         <h3 className="mb-4">
                             <span className="mr-2 text-xs text-rose-500 md:text-base">
                                 {(index + 1).toString().padStart(2, "0")}
@@ -46,24 +44,22 @@ export default function Projects() {
                         <p className="mb-4 text-sm md:text-base">
                             {project.description}
                         </p>
-                        <ul className="mb-4 flex gap-2 text-sm md:text-base">
-                            {project.stack.map((tool) => (
-                                <li
-                                    className="rounded bg-rose-500 px-2 py-1"
-                                    key={`${project.title}-${tool}`}
-                                >
-                                    {tool}
-                                </li>
-                            ))}
-                        </ul>
                         <a
                             href={project.demo}
                             target="_blank"
                             rel="norefferrer noopener"
-                            className="text-rose-500"
-                        >
+                            className="mb-4 block text-rose-500">
                             Live Demo 🔗
                         </a>
+                        <ul className="flex gap-2 text-sm md:text-base">
+                            {project.stack.map((tool) => (
+                                <li
+                                    className="rounded bg-rose-500 px-2 py-1"
+                                    key={`${project.title}-${tool}`}>
+                                    {tool}
+                                </li>
+                            ))}
+                        </ul>
                     </li>
                 ))}
             </ul>

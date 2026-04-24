@@ -35,14 +35,12 @@ export default function Hero() {
                     <div className="flex gap-4">
                         <a
                             href="#projects"
-                            className="rounded-lg bg-rose-500 px-3 py-2 text-sm md:px-5 md:py-3 md:text-base"
-                        >
+                            className="rounded-lg bg-rose-500 px-3 py-2 text-sm md:px-5 md:py-3 md:text-base">
                             View Projects
                         </a>
                         <a
                             href="#contact"
-                            className="rounded-lg border border-rose-500 px-3 py-2 text-sm text-rose-500 md:px-5 md:py-3 md:text-base"
-                        >
+                            className="rounded-lg border border-rose-500 px-3 py-2 text-sm text-rose-500 md:px-5 md:py-3 md:text-base">
                             Get in touch
                         </a>
                     </div>

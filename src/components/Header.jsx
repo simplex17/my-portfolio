@@ -27,8 +27,7 @@ export default function Header() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="invert-100"
-                >
+                    className="invert-100">
                     <img src={item.icon} width="24" alt={item.alt} />
                 </a>
             ) : (

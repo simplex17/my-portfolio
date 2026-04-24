@@ -34,11 +34,9 @@ export default function Stack() {
         <section
             id="stack"
             ref={targetRef}
-            className="mb-40 flex flex-col md:flex-row"
-        >
+            className="mb-40 flex flex-col md:flex-row">
             <h2
-                className={`mb-6 text-xl transition-all duration-700 md:flex-2 md:text-4xl ${!isVisible ? "translate-y-12 opacity-0" : ""}`}
-            >
+                className={`mb-6 text-xl transition-all duration-700 md:flex-2 md:text-4xl ${!isVisible ? "translate-y-12 opacity-0" : ""}`}>
                 Stack
             </h2>
             <ul className="flex flex-wrap gap-x-4 gap-y-8 text-sm md:flex-5 md:text-base">
@@ -46,14 +44,12 @@ export default function Stack() {
                     <li
                         key={`${tool.name}`}
                         className={`flex w-40 items-center rounded-md transition-all duration-700 ${!isVisible ? "translate-y-12 opacity-0" : ""}`}
-                        style={{ transitionDelay: `${(index + 1) * 100}ms` }}
-                    >
+                        style={{ transitionDelay: `${(index + 1) * 100}ms` }}>
                         <img
                             src={tool.icon}
                             width="32"
                             className="mr-4"
-                            alt="tool.name"
-                        ></img>
+                            alt="tool.name"></img>
                         <span>{tool.name}</span>
                     </li>
                 ))}

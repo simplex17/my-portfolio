@@ -23,7 +23,7 @@ function App() {
                     const maxScroll = scrollHeight - innerHeight;
                     const progress =
                         maxScroll > 0 ? (scrollY / maxScroll) * 100 : 0;
-                        
+
                     setScrollProgress(progress);
                     ticking = false;
                 });
@@ -43,8 +43,7 @@ function App() {
                 <div className="fixed top-1/2 right-2 h-28 w-1 -translate-y-1/2 rounded bg-white">
                     <div
                         className="w-full rounded bg-rose-500"
-                        style={{ height: `${scrollProgress}%` }}
-                    ></div>
+                        style={{ height: `${scrollProgress}%` }}></div>
                 </div>
                 <Hero />
                 <About />
