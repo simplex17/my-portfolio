@@ -24,10 +24,10 @@ export default function Projects() {
     return (
         <section id="projects" ref={targetRef} className="mb-40">
             <h2
-                className={`mb-6 text-xl transition-all duration-700 md:text-4xl ${!isVisible ? "translate-y-12 opacity-0" : ""}`}>
+                className={`mb-16 text-xl transition-all duration-700 md:text-4xl ${!isVisible ? "translate-y-12 opacity-0" : ""}`}>
                 Projects
             </h2>
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-8">
                 {projects.map((project, index) => (
                     <li
                         key={project.title}
