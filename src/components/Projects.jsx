@@ -19,6 +19,13 @@ export default function Projects() {
                 "A browser-based Tetris game built from scratch using JavaScript. Implements a custom game loop using requestAnimationFrame and delta-time updates.",
             demo: "https://simplex17.github.io/tetris-js/",
         },
+        {
+            title: "Code Playground",
+            stack: ["Angular", "TypeScript", "CSS", "HTML"],
+            description:
+                "A browser-based code editor for HTML, CSS and JS built using Angular v21.",
+            demo: "https://simplex17.github.io/code-playground/",
+        },
     ];
 
     return (
